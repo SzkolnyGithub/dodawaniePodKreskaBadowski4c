@@ -29,204 +29,226 @@ namespace dodawaniePodKreskaBadowski4c
         /// </summary>
         private void InitializeComponent()
         {
-            this.liczba1 = new System.Windows.Forms.Label();
-            this.b1 = new System.Windows.Forms.Button();
-            this.liczba2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.l1 = new System.Windows.Forms.MaskedTextBox();
-            this.l2 = new System.Windows.Forms.MaskedTextBox();
-            this.p3 = new System.Windows.Forms.MaskedTextBox();
-            this.l4 = new System.Windows.Forms.MaskedTextBox();
-            this.l3 = new System.Windows.Forms.MaskedTextBox();
-            this.p1 = new System.Windows.Forms.MaskedTextBox();
-            this.l6 = new System.Windows.Forms.MaskedTextBox();
-            this.l5 = new System.Windows.Forms.MaskedTextBox();
-            this.p4 = new System.Windows.Forms.MaskedTextBox();
-            this.p2 = new System.Windows.Forms.MaskedTextBox();
-            this.p5 = new System.Windows.Forms.MaskedTextBox();
-            this.SuspendLayout();
+            liczba1 = new System.Windows.Forms.Label();
+            liczba2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            l1 = new System.Windows.Forms.MaskedTextBox();
+            l2 = new System.Windows.Forms.MaskedTextBox();
+            p3 = new System.Windows.Forms.MaskedTextBox();
+            l4 = new System.Windows.Forms.MaskedTextBox();
+            l3 = new System.Windows.Forms.MaskedTextBox();
+            p1 = new System.Windows.Forms.MaskedTextBox();
+            l6 = new System.Windows.Forms.MaskedTextBox();
+            l5 = new System.Windows.Forms.MaskedTextBox();
+            p4 = new System.Windows.Forms.MaskedTextBox();
+            p2 = new System.Windows.Forms.MaskedTextBox();
+            p5 = new System.Windows.Forms.MaskedTextBox();
+            wynik = new System.Windows.Forms.Label();
+            reset = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // liczba1
             // 
-            this.liczba1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.liczba1.Location = new System.Drawing.Point(303, 151);
-            this.liczba1.Name = "liczba1";
-            this.liczba1.Size = new System.Drawing.Size(142, 36);
-            this.liczba1.TabIndex = 1;
-            this.liczba1.Text = "1   2   3   4   5";
-            // 
-            // b1
-            // 
-            this.b1.Location = new System.Drawing.Point(314, 375);
-            this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(97, 34);
-            this.b1.TabIndex = 3;
-            this.b1.Text = "Placeholder";
-            this.b1.UseVisualStyleBackColor = true;
-            this.b1.Click += new System.EventHandler(this.b1_Click);
+            liczba1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            liczba1.Location = new System.Drawing.Point(303, 164);
+            liczba1.Name = "liczba1";
+            liczba1.Size = new System.Drawing.Size(142, 36);
+            liczba1.TabIndex = 1;
+            liczba1.Text = "1   2   3   4   5";
             // 
             // liczba2
             // 
-            this.liczba2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.liczba2.Location = new System.Drawing.Point(303, 197);
-            this.liczba2.Name = "liczba2";
-            this.liczba2.Size = new System.Drawing.Size(142, 36);
-            this.liczba2.TabIndex = 4;
-            this.liczba2.Text = "1   2   3   4   5";
+            liczba2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            liczba2.Location = new System.Drawing.Point(303, 200);
+            liczba2.Name = "liczba2";
+            liczba2.Size = new System.Drawing.Size(142, 28);
+            liczba2.TabIndex = 4;
+            liczba2.Text = "1   2   3   4   5";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(271, 197);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 28);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "+";
+            label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label3.Location = new System.Drawing.Point(277, 200);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(26, 28);
+            label3.TabIndex = 5;
+            label3.Text = "+";
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 30);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "System liczbowy 9-owy";
+            label1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label1.Location = new System.Drawing.Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(224, 30);
+            label1.TabIndex = 15;
+            label1.Text = "System liczbowy 9-owy";
             // 
             // l1
             // 
-            this.l1.Location = new System.Drawing.Point(408, 236);
-            this.l1.Mask = "0";
-            this.l1.Name = "l1";
-            this.l1.Size = new System.Drawing.Size(20, 23);
-            this.l1.TabIndex = 16;
-            this.l1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.l1_MaskInputRejected);
-            this.l1.TextChanged += new System.EventHandler(this.l1_TextChanged);
+            l1.Location = new System.Drawing.Point(407, 232);
+            l1.Mask = "0";
+            l1.Name = "l1";
+            l1.Size = new System.Drawing.Size(20, 23);
+            l1.TabIndex = 16;
+            l1.MaskInputRejected += l1_MaskInputRejected;
+            l1.TextChanged += l1_TextChanged;
             // 
             // l2
             // 
-            this.l2.Location = new System.Drawing.Point(382, 236);
-            this.l2.Mask = "0";
-            this.l2.Name = "l2";
-            this.l2.Size = new System.Drawing.Size(20, 23);
-            this.l2.TabIndex = 17;
-            this.l2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.l2_MaskInputRejected);
+            l2.Location = new System.Drawing.Point(381, 232);
+            l2.Mask = "0";
+            l2.Name = "l2";
+            l2.Size = new System.Drawing.Size(20, 23);
+            l2.TabIndex = 17;
+            l2.MaskInputRejected += l2_MaskInputRejected;
+            l2.TextChanged += l2_TextChanged;
             // 
             // p3
             // 
-            this.p3.Location = new System.Drawing.Point(330, 125);
-            this.p3.Mask = "0";
-            this.p3.Name = "p3";
-            this.p3.Size = new System.Drawing.Size(20, 23);
-            this.p3.TabIndex = 18;
-            this.p3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.p3_MaskInputRejected);
+            p3.Location = new System.Drawing.Point(329, 138);
+            p3.Mask = "0";
+            p3.Name = "p3";
+            p3.Size = new System.Drawing.Size(20, 23);
+            p3.TabIndex = 18;
+            p3.MaskInputRejected += p3_MaskInputRejected;
+            p3.TextChanged += p3_TextChanged;
             // 
             // l4
             // 
-            this.l4.Location = new System.Drawing.Point(330, 236);
-            this.l4.Mask = "0";
-            this.l4.Name = "l4";
-            this.l4.Size = new System.Drawing.Size(20, 23);
-            this.l4.TabIndex = 19;
-            this.l4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.l4_MaskInputRejected);
+            l4.Location = new System.Drawing.Point(329, 232);
+            l4.Mask = "0";
+            l4.Name = "l4";
+            l4.Size = new System.Drawing.Size(20, 23);
+            l4.TabIndex = 19;
+            l4.MaskInputRejected += l4_MaskInputRejected;
+            l4.TextChanged += l4_TextChanged;
             // 
             // l3
             // 
-            this.l3.Location = new System.Drawing.Point(356, 236);
-            this.l3.Mask = "0";
-            this.l3.Name = "l3";
-            this.l3.Size = new System.Drawing.Size(20, 23);
-            this.l3.TabIndex = 20;
-            this.l3.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.l3_MaskInputRejected);
+            l3.Location = new System.Drawing.Point(355, 232);
+            l3.Mask = "0";
+            l3.Name = "l3";
+            l3.Size = new System.Drawing.Size(20, 23);
+            l3.TabIndex = 20;
+            l3.MaskInputRejected += l3_MaskInputRejected;
+            l3.TextChanged += l3_TextChanged;
             // 
             // p1
             // 
-            this.p1.Location = new System.Drawing.Point(382, 125);
-            this.p1.Mask = "0";
-            this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(20, 23);
-            this.p1.TabIndex = 21;
-            this.p1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.p1_MaskInputRejected);
-            this.p1.TextChanged += new System.EventHandler(this.p1_TextChanged);
+            p1.Location = new System.Drawing.Point(381, 138);
+            p1.Mask = "0";
+            p1.Name = "p1";
+            p1.Size = new System.Drawing.Size(20, 23);
+            p1.TabIndex = 21;
+            p1.MaskInputRejected += p1_MaskInputRejected;
+            p1.TextChanged += p1_TextChanged;
             // 
             // l6
             // 
-            this.l6.Location = new System.Drawing.Point(277, 236);
-            this.l6.Mask = "0";
-            this.l6.Name = "l6";
-            this.l6.Size = new System.Drawing.Size(20, 23);
-            this.l6.TabIndex = 22;
-            this.l6.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.l6_MaskInputRejected);
+            l6.Location = new System.Drawing.Point(277, 232);
+            l6.Mask = "0";
+            l6.Name = "l6";
+            l6.Size = new System.Drawing.Size(20, 23);
+            l6.TabIndex = 22;
+            l6.MaskInputRejected += l6_MaskInputRejected;
+            l6.TextChanged += l6_TextChanged;
             // 
             // l5
             // 
-            this.l5.Location = new System.Drawing.Point(304, 236);
-            this.l5.Mask = "0";
-            this.l5.Name = "l5";
-            this.l5.Size = new System.Drawing.Size(20, 23);
-            this.l5.TabIndex = 23;
-            this.l5.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.l5_MaskInputRejected);
+            l5.Location = new System.Drawing.Point(303, 232);
+            l5.Mask = "0";
+            l5.Name = "l5";
+            l5.Size = new System.Drawing.Size(20, 23);
+            l5.TabIndex = 23;
+            l5.MaskInputRejected += l5_MaskInputRejected;
+            l5.TextChanged += l5_TextChanged;
             // 
             // p4
             // 
-            this.p4.Location = new System.Drawing.Point(304, 125);
-            this.p4.Mask = "0";
-            this.p4.Name = "p4";
-            this.p4.Size = new System.Drawing.Size(20, 23);
-            this.p4.TabIndex = 24;
-            this.p4.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.p4_MaskInputRejected);
+            p4.Location = new System.Drawing.Point(303, 138);
+            p4.Mask = "0";
+            p4.Name = "p4";
+            p4.Size = new System.Drawing.Size(20, 23);
+            p4.TabIndex = 24;
+            p4.MaskInputRejected += p4_MaskInputRejected;
+            p4.TextChanged += p4_TextChanged;
             // 
             // p2
             // 
-            this.p2.Location = new System.Drawing.Point(356, 125);
-            this.p2.Mask = "0";
-            this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(20, 23);
-            this.p2.TabIndex = 25;
-            this.p2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.p2_MaskInputRejected);
+            p2.Location = new System.Drawing.Point(355, 138);
+            p2.Mask = "0";
+            p2.Name = "p2";
+            p2.Size = new System.Drawing.Size(20, 23);
+            p2.TabIndex = 25;
+            p2.MaskInputRejected += p2_MaskInputRejected;
+            p2.TextChanged += p2_TextChanged;
             // 
             // p5
             // 
-            this.p5.Location = new System.Drawing.Point(278, 125);
-            this.p5.Mask = "0";
-            this.p5.Name = "p5";
-            this.p5.Size = new System.Drawing.Size(20, 23);
-            this.p5.TabIndex = 26;
-            this.p5.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.p5_MaskInputRejected);
+            p5.Location = new System.Drawing.Point(276, 138);
+            p5.Mask = "0";
+            p5.Name = "p5";
+            p5.Size = new System.Drawing.Size(20, 23);
+            p5.TabIndex = 26;
+            p5.MaskInputRejected += p5_MaskInputRejected;
+            p5.TextChanged += p5_TextChanged;
+            // 
+            // wynik
+            // 
+            wynik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            wynik.Location = new System.Drawing.Point(179, 302);
+            wynik.Name = "wynik";
+            wynik.Size = new System.Drawing.Size(374, 31);
+            wynik.TabIndex = 27;
+            wynik.Text = "Oblicz wynik!";
+            wynik.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // reset
+            // 
+            reset.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            reset.Location = new System.Drawing.Point(596, 349);
+            reset.Name = "reset";
+            reset.Size = new System.Drawing.Size(105, 39);
+            reset.TabIndex = 28;
+            reset.Text = "Reset";
+            reset.UseVisualStyleBackColor = true;
+            reset.Click += reset_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.p5);
-            this.Controls.Add(this.p2);
-            this.Controls.Add(this.p4);
-            this.Controls.Add(this.l5);
-            this.Controls.Add(this.l6);
-            this.Controls.Add(this.p1);
-            this.Controls.Add(this.l3);
-            this.Controls.Add(this.l4);
-            this.Controls.Add(this.p3);
-            this.Controls.Add(this.l2);
-            this.Controls.Add(this.l1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.liczba2);
-            this.Controls.Add(this.b1);
-            this.Controls.Add(this.liczba1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
-            this.Text = "Nauka dodawania pod kreską";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(800, 450);
+            Controls.Add(reset);
+            Controls.Add(wynik);
+            Controls.Add(p5);
+            Controls.Add(p2);
+            Controls.Add(p4);
+            Controls.Add(l5);
+            Controls.Add(l6);
+            Controls.Add(p1);
+            Controls.Add(l3);
+            Controls.Add(l4);
+            Controls.Add(p3);
+            Controls.Add(l2);
+            Controls.Add(l1);
+            Controls.Add(label1);
+            Controls.Add(label3);
+            Controls.Add(liczba2);
+            Controls.Add(liczba1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            Name = "Form1";
+            Text = "Nauka dodawania pod kreską";
+            Load += Form1_Load;
+            Paint += Form1_Paint;
+            MouseMove += Form1_MouseMove;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
         private System.Windows.Forms.Label liczba1;
-        private System.Windows.Forms.Button b1;
         private System.Windows.Forms.Label liczba2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -241,6 +263,8 @@ namespace dodawaniePodKreskaBadowski4c
         private System.Windows.Forms.MaskedTextBox p4;
         private System.Windows.Forms.MaskedTextBox p2;
         private System.Windows.Forms.MaskedTextBox p5;
+        private System.Windows.Forms.Label wynik;
+        private System.Windows.Forms.Button reset;
     }
 }
 
