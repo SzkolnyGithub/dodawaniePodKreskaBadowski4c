@@ -46,6 +46,10 @@ namespace dodawaniePodKreskaBadowski4c
             p5 = new System.Windows.Forms.MaskedTextBox();
             wynik = new System.Windows.Forms.Label();
             reset = new System.Windows.Forms.Button();
+            Counter = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            Wyniki = new System.Windows.Forms.Label();
+            infinite = new System.Windows.Forms.Label();
             SuspendLayout();
             // 
             // liczba1
@@ -197,7 +201,7 @@ namespace dodawaniePodKreskaBadowski4c
             // wynik
             // 
             wynik.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            wynik.Location = new System.Drawing.Point(179, 302);
+            wynik.Location = new System.Drawing.Point(27, 315);
             wynik.Name = "wynik";
             wynik.Size = new System.Drawing.Size(374, 31);
             wynik.TabIndex = 27;
@@ -207,7 +211,7 @@ namespace dodawaniePodKreskaBadowski4c
             // reset
             // 
             reset.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            reset.Location = new System.Drawing.Point(596, 349);
+            reset.Location = new System.Drawing.Point(596, 367);
             reset.Name = "reset";
             reset.Size = new System.Drawing.Size(105, 39);
             reset.TabIndex = 28;
@@ -215,11 +219,50 @@ namespace dodawaniePodKreskaBadowski4c
             reset.UseVisualStyleBackColor = true;
             reset.Click += reset_Click;
             // 
+            // Counter
+            // 
+            Counter.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            Counter.Location = new System.Drawing.Point(462, 9);
+            Counter.Name = "Counter";
+            Counter.Size = new System.Drawing.Size(326, 35);
+            Counter.TabIndex = 29;
+            Counter.Text = "Ilość prawidłowych obliczeń: 0";
+            // 
+            // label2
+            // 
+            label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            label2.Location = new System.Drawing.Point(462, 44);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(326, 31);
+            label2.TabIndex = 30;
+            label2.Text = "Wyniki:";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Wyniki
+            // 
+            Wyniki.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            Wyniki.Location = new System.Drawing.Point(505, 80);
+            Wyniki.Name = "Wyniki";
+            Wyniki.Size = new System.Drawing.Size(234, 232);
+            Wyniki.TabIndex = 31;
+            // 
+            // infinite
+            // 
+            infinite.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            infinite.Location = new System.Drawing.Point(505, 312);
+            infinite.Name = "infinite";
+            infinite.Size = new System.Drawing.Size(234, 30);
+            infinite.TabIndex = 32;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(800, 450);
+            Controls.Add(infinite);
+            Controls.Add(Wyniki);
+            Controls.Add(label2);
+            Controls.Add(Counter);
             Controls.Add(reset);
             Controls.Add(wynik);
             Controls.Add(p5);
@@ -265,6 +308,10 @@ namespace dodawaniePodKreskaBadowski4c
         private System.Windows.Forms.MaskedTextBox p5;
         private System.Windows.Forms.Label wynik;
         private System.Windows.Forms.Button reset;
+        private System.Windows.Forms.Label Counter;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Wyniki;
+        private System.Windows.Forms.Label infinite;
     }
 }
 

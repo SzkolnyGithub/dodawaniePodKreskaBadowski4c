@@ -13,6 +13,8 @@ namespace dodawaniePodKreskaBadowski4c
     public partial class Form1 : Form
     {
         int[] liczby = new int[10];
+        int wygrane = 0;
+        string wynikGry = "";
         private void przygotuj()
         {
             for (int i = 0; i < liczby.Length; i++)
@@ -204,11 +206,13 @@ namespace dodawaniePodKreskaBadowski4c
             {
                 string Wynik = l5.Text + l4.Text + l3.Text + l2.Text + l1.Text;
                 wynik.Text = "Udało ci się obliczyć działanie! Jest to: " + Wynik;
+                wynikGry = Wynik;
             }
             else
             {
                 string Wynik = l6.Text + l5.Text + l4.Text + l3.Text + l2.Text + l1.Text;
                 wynik.Text = "Udało ci się obliczyć działanie! Jest to: " + Wynik;
+                wynikGry = Wynik;
             }
             reset.Enabled = true;
         }
@@ -229,17 +233,17 @@ namespace dodawaniePodKreskaBadowski4c
                 }
             }
         }
-        private void l1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void l2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void l3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void l4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void l5_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void l6_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void p1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void p2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void p3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void p4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
-        private void p5_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -20, 5000); }
+        private void l1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void l2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void l3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void l4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void l5_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void l6_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void p1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void p2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void p3_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void p4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
+        private void p5_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) { ToolTip t1 = new ToolTip(); t1.ToolTipTitle = "Błąd wprowadzania"; t1.Show("Wprowadź liczbę od 0 do 9", l1, 0, -125, 1000); }
         private void Form1_Load(object sender, EventArgs e) { }
         private void Form1_MouseMove(object sender, MouseEventArgs e)
         {
@@ -255,6 +259,16 @@ namespace dodawaniePodKreskaBadowski4c
 
         private void reset_Click(object sender, EventArgs e)
         {
+            wygrane++;
+            Counter.Text = "Ilość prawidłowych obliczeń: " + wygrane;
+            if (wygrane < 9)
+            {
+                Wyniki.Text += wygrane + ". " + wynikGry + "\n";
+            }
+            else
+            {
+                infinite.Text = wygrane + ". " + wynikGry + "\n";
+            }
             przygotuj();
             Invalidate();
             Update();
