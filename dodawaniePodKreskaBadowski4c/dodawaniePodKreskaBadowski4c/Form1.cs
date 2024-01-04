@@ -203,12 +203,12 @@ namespace dodawaniePodKreskaBadowski4c
             if (jest == 1)
             {
                 string Wynik = l5.Text + l4.Text + l3.Text + l2.Text + l1.Text;
-                wynik.Text = "Udało ci się obliczyć działanie! Jest to : " + Wynik;
+                wynik.Text = "Udało ci się obliczyć działanie! Jest to: " + Wynik;
             }
             else
             {
                 string Wynik = l6.Text + l5.Text + l4.Text + l3.Text + l2.Text + l1.Text;
-                wynik.Text = "Udało ci się obliczyć działanie! Jest to : " + Wynik;
+                wynik.Text = "Udało ci się obliczyć działanie! Jest to: " + Wynik;
             }
             reset.Enabled = true;
         }
